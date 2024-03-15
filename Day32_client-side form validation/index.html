@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Client-side form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Create Account</p>
+        </div>
+
+        <form action="#">
+
+            <div class="input_field">
+
+                <div class="form_control">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="nameField input" placeholder="Enter here">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form_control">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" class="nameField input" placeholder="Enter here">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form_control">
+                    <label for="username">Create username</label>
+                    <input type="text" id="username" class="input" placeholder="johnWC98">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form_control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input" placeholder="johnsmith123@hotmail.com">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form_control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="pass input" placeholder="*****">
+                    <span class="showHide"><i class="fa-solid fa-eye"></i></span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form_control">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" id="confirmPass" class="pass input" placeholder="*****">
+                    <span class="showHide"><i class="fa-solid fa-eye"></i></span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error Message</small>
+                </div>
+
+            </div>
+
+            <div class="subBtn">
+                <input type="reset" value="Reset" class="reset">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
